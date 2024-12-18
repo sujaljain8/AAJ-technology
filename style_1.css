@@ -1,0 +1,590 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header and Navigation Bar */
+header {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    height: 60px; /* Adjusted for layout */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+    display: flex;
+    
+    width: 100%;
+    justify-content: center; /* Centers the navigation links */
+    align-items: center; /* Vertically centers the links */
+}
+
+/* Logo */
+.logo a img {
+    width: 151px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    left: 79px;
+}
+
+/* Center Navigation Links   
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.nav-links li {  
+    margin: 0 20px;
+}
+
+.nav-links a {  
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-links li:nth-child(1) a { /* Company  
+    width: 73px;
+    height: 22px;
+}
+
+.nav-links li:nth-child(2) a { /* Calculate Shipping Cost  
+    width: 184px;
+    height: 22px;
+}
+
+.nav-links li:nth-child(3) a { /* Blogs  
+    width: 43px;
+    height: 22px;
+}
+
+.nav-links li:nth-child(4) a { /* Contact Us 
+    width: 87px;
+    height: 22px;
+}  */
+
+/* Navigation Links */
+
+
+.nav-links {
+    display: flex;
+    justify-content: space-between; /* Center the links */
+    align-items: center;
+    list-style: none;
+
+    margin: 0 ; /* Ensure no extra margin from the container */
+    gap: 25px; /* Use gap property for spacing control */
+    position: relative; /* Allow positioning */
+    left: 550px; 
+}
+
+.nav-links li {
+    
+    margin: 0; /* Remove any extra margins */
+    padding: 0; /* Remove extra padding */
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #272727;
+    transition: color 0.3s;
+}
+
+
+
+
+
+/* Header Icons */
+.header-icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Align to the right */
+}
+
+.header-icons img {
+    width: 12px;
+    height: 14.67px;
+    margin-right: 10px; /* Reduced margin to bring it closer to the link */
+}
+
+.track-shipment {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    margin-right: 20px; /* Adjust margin for spacing */
+}
+
+/* Login Button */
+.login-btn {
+    width: 141.07px;
+    height: 40px;
+    background-color: #d32f2f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #b71c1c;
+}
+
+/* Registration Section */
+
+.registration-section {
+    position: relative;
+    width: 100%; /* Set to 100% for the section to span the entire width */
+    height: 100px;
+    top: 133px;
+    left: 198px;
+    gap: 0px;
+    opacity: 1; /* Make sure the content is visible */
+    color: #272727;
+    text-align: left; /* Ensures text is aligned to the left */
+}
+
+.registration-heading {
+    font-family: 'Manrope', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.registration-subheading {
+    font-family: 'Manrope', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: left;
+    color: #272727; /* Same color for subheading */
+    margin-top: -10px; /* Adjust spacing to make it closer to the first line */
+}
+
+.registration-paragraph {
+    width: 565px;
+    height: 47px;
+    top: 230px;
+    left: 85px;
+    gap: 0px;
+    opacity: 1;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: gray; /* Text color changed to gray */
+    margin-left: -50px;
+}
+
+.truck-image {
+    width: 62px;
+    height: 37px;
+               /* Set the background color */
+    display: inline-block; /* Ensure proper alignment */
+    margin-bottom: 10px; /* Add spacing below the truck image */
+    margin-top: 250px; /* Moves the image down */
+    margin-left: 150px; /* Moves the image to the right */
+}
+
+/* Transporters Text */
+.transporters-text {
+    width: 205.15px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #272727; /* Use dark color for visibility */
+    margin-left: 150px;
+}
+/* Styles for the rectangle box */
+.rectangle-box {
+    width: 217px;
+    height: 156px;
+    position: absolute; /* Allows precise positioning */
+    top: 400px; /* Adjust this to move the rectangle up or down */
+    left: 319px; /* Adjust this to move the rectangle horizontally */
+    background: #F8F2F2; /* Light pink background */
+    border-radius: 5px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    margin-left: 50px;
+}
+/* Styles for the image inside the rectangle box */
+
+
+.rectangle-box img {
+    width: 51px;
+    height: 49px;
+    position: relative; /* Allows relative positioning inside the rectangle */
+    top: -10px; /* Moves the image slightly upwards */
+    margin-bottom: 10px;
+    margin-left: -100px;
+}
+
+/* Styles for the text inside the rectangle box */
+.rectangle-box p {
+    width: 177px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #272727; /* Dark color for text */
+    margin: 0; /* Remove default margin */
+}
+.pin-section {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    
+    top: 400px; /* Increased from 340px to move down */
+    left: 650px; /* Decreased from 576px to move left */
+}
+
+.pin-section img {
+    width: 48px;
+    height: 48px;
+}
+
+.pin-section p {
+    position: absolute;
+    width: 177px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #272727;
+    top: 64px; /* Adjusts spacing below the image */
+    left: -12px; /* Adjusts horizontal alignment with the image */
+}
+
+
+/* Register Form Container */
+
+
+.register-container {
+    width: 469px;
+    height: 946px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 20px 0px #0000001A;
+    padding: 20px;
+    position: relative;
+    top: 128 px;
+    left: 922px;
+}
+
+/* Heading Style */
+.register-heading {
+    width: 105px;
+    height: 50px;
+    position: absolute;
+    top: 133px;
+    left: 1109px;
+    opacity: 1;
+}
+
+/* Input Fields */
+.form-label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #272727;
+}
+
+.form-input {
+    width: 417px;
+    height: 50px;
+    background: #F3F3F3;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Button Styles */
+.btn-yes, .btn-no {
+    width: 84px;
+    height: 50px;
+    background: #FAFAFA;
+    border-radius: 10px;
+    border: 1px solid #DCDCDC;
+    margin-right: 10px;
+}
+
+.btn-yes {
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #b71c1c;
+    color: #ddd;
+}
+
+.btn-no {
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.btn-add-gst, .btn-register {
+    width: 160px;
+    height: 40px;
+    background: #FAFAFA;
+    border-radius: 5px;
+    border: 1px solid #C2202B;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 300;
+    color: #C2202B;
+}
+
+.btn-register {
+    background: #C2202B;
+    color: white;
+}
+
+/* Terms & Conditions Text */
+.terms-text {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 300;
+    color: #272727;
+    margin-top: 20px;
+    text-align: center;
+}
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #000;
+}
+
+p {
+    text-align: center;
+}
+
+/* Main Section Styling */
+.main-container {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.subheading {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+    margin-bottom: 15px;
+}
+
+/* Transporter Section Styling */
+.transporter-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.description {
+    margin: 10px auto 20px;
+    max-width: 600px;
+}
+
+.signup-btn {
+    background-color: #e70000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.signup-btn:hover {
+    background-color: #c40000;
+}
+
+.transporter-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.transporter-logos img {
+    max-width: 80px;
+    height: auto;
+}
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.testimonial-card {
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 350px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-text {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.testimonial-client {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.testimonial-client img {
+    border-radius: 50%;
+}
+
+.testimonial-client h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.testimonial-client p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-top {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-top h2 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 10px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.footer-grid h4 {
+    margin-bottom: 10px;
+}
+
+.footer-grid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-grid li {
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
